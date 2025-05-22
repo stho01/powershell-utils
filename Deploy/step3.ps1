@@ -1,5 +1,6 @@
 # Path til målmappen der modulen skal installeres
-$targetModulePath = "C:\Users\$env:USERNAME\Documents\PowerShell\Modules\git-shorts"
+# $targetModulePath = "C:\Users\$env:USERNAME\Documents\PowerShell\Modules\git-shorts"
+$targetModulePath = $(Split-Path $profile) + "\modules\git-shorts"
 
 # Path til prosjektets modulmappe
 $sourceModulePath = Join-Path -Path $PSScriptRoot -ChildPath "..\modules\git-shorts"
